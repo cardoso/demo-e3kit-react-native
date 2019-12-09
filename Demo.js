@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Text} from 'react-native';
+import {ScrollView, Text} from 'react-native';
 
 import Device, {setLogger} from './Device.js';
 
@@ -50,7 +50,11 @@ export default class Demo extends Component {
   }
 
   render() {
-    return <Text>{this.state.logs}</Text>;
+    return (
+      <ScrollView>
+        <Text>{this.state.logs}</Text>
+      </ScrollView>
+    );
   }
 
   log(e) {
