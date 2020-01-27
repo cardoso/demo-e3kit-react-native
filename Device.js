@@ -248,7 +248,7 @@ export default class Device {
     } catch (err) {
       this.log(`Failed rotating private key: ${err}`);
 
-      if (err.code === 'private_key_exists') {
+      if (err.name === 'PrivateKeyAlreadyExistsError') {
         await eThree.cleanup();
         this.log('Cleaned up. Trying again...');
         await this.rotatePrivateKey();
