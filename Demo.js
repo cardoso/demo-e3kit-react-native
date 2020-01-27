@@ -8,8 +8,8 @@ export default class Demo extends Component {
     logs: '',
   };
 
-  alice = new Device('Alice2');
-  bob = new Device('Bob2');
+  alice = new Device('Alice_1234567');
+  bob = new Device('Bob_1234567');
 
   bobLookup = null;
   aliceLookup = null;
