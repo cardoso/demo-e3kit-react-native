@@ -91,8 +91,6 @@ export default class Device {
     try {
       //# start of snippet: e3kit_register
       await eThree.register();
-      // load private key and extract public key
-
       //# end of snippet: e3kit_register
       this.log('Registered');
     } catch (err) {
